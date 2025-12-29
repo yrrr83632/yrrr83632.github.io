@@ -41,21 +41,23 @@ export default function AboutPage() {
       </h1>
 
       {/* TOP SECTION */}
-      <div className="grid gap-12 md:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-3">
         <div className="md:col-span-1">
           {aboutImage && (
-            <Image
-              src={aboutImage.imageUrl}
-              alt={aboutImage.description}
-              width={400}
-              height={400}
-              className="h-auto w-full object-cover border border-foreground"
-              data-ai-hint={aboutImage.imageHint}
-            />
+            <div className="border border-foreground p-1">
+              <Image
+                src={aboutImage.imageUrl}
+                alt={aboutImage.description}
+                width={400}
+                height={400}
+                className="h-auto w-full object-cover"
+                data-ai-hint={aboutImage.imageHint}
+              />
+            </div>
           )}
         </div>
 
-        <div className="space-y-6 text-lg text-foreground/80 md:col-span-2">
+        <div className="space-y-6 text-base text-foreground/80 md:col-span-2">
           <p>
             I’m an Integrated M.Tech student in Computer Science and Engineering at VIT, Vellore.
             I enjoy breaking systems, understanding their failure points, and teaching machines
@@ -85,27 +87,28 @@ export default function AboutPage() {
           Timeline
         </h2>
 
-        <div className="relative border-l border-foreground/30 pl-8">
-          {timelineData.map((item, index) => (
-            <div key={index} className="relative mb-12">
-              {/* Timeline Dot */}
-              <div className="absolute -left-[11px] top-1 h-5 w-5 bg-foreground"></div>
-
-              <span className="text-sm uppercase tracking-wider text-foreground/60">
-                {item.year}
-              </span>
-
-              <h3 className="mt-2 text-xl font-semibold">
-                {item.title}
-              </h3>
-
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-foreground/80">
-                {item.description.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="w-full border border-foreground">
+          <table className="w-full border-collapse">
+            <tbody>
+              {timelineData.map((item, index) => (
+                <tr key={index}>
+                  <td className="w-1/4 border-r border-foreground p-4 align-top font-mono text-sm uppercase tracking-wider text-foreground/60">
+                    {item.year}
+                  </td>
+                  <td className="p-4 align-top">
+                    <h3 className="text-xl font-semibold uppercase tracking-wider">
+                      {item.title}
+                    </h3>
+                    <ul className="mt-3 list-disc space-y-2 pl-5 text-base text-foreground/80">
+                      {item.description.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
     </div>
