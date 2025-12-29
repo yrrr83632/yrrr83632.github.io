@@ -5,7 +5,7 @@ export default function AboutPage() {
     const aboutImage = PlaceHolderImages.find(p => p.id === 'homepage-bg');
 
   return (
-    <div className="container mx-auto max-w-5xl animate-fade-in p-8">
+    <div className="container mx-auto max-w-5xl p-8 animation-fade-in">
       <h1 className="mb-8 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
         About Me
       </h1>
@@ -17,7 +17,7 @@ export default function AboutPage() {
              alt={aboutImage.description}
              width={400}
              height={400}
-             className="h-auto w-full object-cover border border-black"
+             className="h-auto w-full object-cover border border-foreground"
              data-ai-hint={aboutImage.imageHint}
            />
           )}

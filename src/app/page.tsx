@@ -2,10 +2,10 @@ import { SocialLinks } from '@/components/social-links';
 
 export default function Home() {
   return (
-    <section className="flex h-full min-h-screen flex-col items-center justify-center p-8">
+    <section className="flex h-full min-h-screen flex-col items-center justify-center p-8 animation-fade-in">
       <div className="flex-grow text-center flex flex-col items-center justify-center">
-        <div className="mb-8 inline-block bg-primary p-4">
-          <h1 className="font-headline text-6xl font-bold uppercase tracking-widest text-primary-foreground md:text-8xl lg:text-9xl">
+        <div className="mb-8 inline-block border border-foreground p-4">
+          <h1 className="font-headline text-6xl font-bold uppercase tracking-widest text-foreground md:text-8xl lg:text-9xl">
             Bala Sankar
           </h1>
         </div>

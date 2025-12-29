@@ -24,7 +24,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto max-w-7xl animate-fade-in p-8">
+    <div className="container mx-auto max-w-7xl p-8 animation-fade-in">
       <h1 className="mb-12 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
         Passion Projects
       </h1>

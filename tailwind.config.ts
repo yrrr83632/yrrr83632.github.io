@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Poppins', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
+        body: ['Space Mono', 'monospace'],
+        headline: ['Space Mono', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -54,18 +54,6 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        cyan: {
-          DEFAULT: 'hsl(var(--cyan))',
-          foreground: 'hsl(var(--cyan-foreground))',
-        },
-        magenta: {
-          DEFAULT: 'hsl(var(--magenta))',
-          foreground: 'hsl(var(--magenta-foreground))',
-        },
-        yellow: {
-          DEFAULT: 'hsl(var(--yellow))',
-          foreground: 'hsl(var(--yellow-foreground))',
-        },
       },
       borderRadius: {
         lg: 'var(--radius)',
