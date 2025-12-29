@@ -5,17 +5,17 @@ const projects = [
   {
     title: "Project Alpha",
     description: "A groundbreaking approach to decentralized finance, leveraging AI for predictive market analysis.",
-    githubLink: "#"
+    githubLink: "https://github.com"
   },
   {
     title: "Creative Canvas",
     description: "An interactive web application that allows users to generate and collaborate on digital pop art in real-time.",
-    githubLink: "#"
+    githubLink: "https://github.com"
   },
   {
     title: "Future Forge",
     description: "An experimental platform for building and testing next-generation user interfaces with gesture controls.",
-    githubLink: "#"
+    githubLink: "https://github.com"
   },
 ];
 
