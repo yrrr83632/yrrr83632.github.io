@@ -10,24 +10,21 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-      <div className="flex flex-col space-y-8">
-        <Link href="/" className="flex items-center">
-          <span className="text-2xl font-bold uppercase tracking-widest">{siteConfig.name}</span>
-        </Link>
-        <nav className="flex flex-col items-start space-y-4">
+    <header className="absolute top-0 right-0 p-8">
+       <nav className="flex items-center space-x-6">
           {siteConfig.navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                "text-lg font-medium uppercase tracking-wider transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary" : "text-foreground/60"
+                "text-lg font-medium uppercase tracking-wider transition-all hover:font-bold",
+                pathname === item.href ? "font-bold" : "font-normal"
               )}
             >
               {item.label}
             </Link>
           ))}
         </nav>
-      </div>
+    </header>
   );
 }
