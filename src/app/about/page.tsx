@@ -28,8 +28,8 @@ export default function AboutPage() {
   const aboutImage = PlaceHolderImages.find(p => p.id === 'homepage-bg');
 
   return (
-    <div className="container mx-auto max-w-5xl p-8 pt-24 animation-fade-in">
-      <h1 className="mb-12 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
+    <div className="container mx-auto max-w-5xl p-8 pt-24">
+      <h1 className="mb-12 text-5xl font-bold uppercase tracking-widest md:text-7xl">
         About Me
       </h1>
 
@@ -37,16 +37,14 @@ export default function AboutPage() {
       <div className="grid gap-8 md:grid-cols-3">
         <div className="md:col-span-1">
           {aboutImage && (
-            <div className="border-4 border-foreground p-2">
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                width={400}
-                height={400}
-                className="h-auto w-full object-cover"
-                data-ai-hint={aboutImage.imageHint}
-              />
-            </div>
+            <Image
+              src={aboutImage.imageUrl}
+              alt={aboutImage.description}
+              width={400}
+              height={400}
+              className="h-auto w-full object-cover"
+              data-ai-hint={aboutImage.imageHint}
+            />
           )}
         </div>
 
