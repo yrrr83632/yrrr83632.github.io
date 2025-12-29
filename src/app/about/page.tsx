@@ -87,28 +87,23 @@ export default function AboutPage() {
           Timeline
         </h2>
 
-        <div className="w-full border border-foreground">
-          <table className="w-full border-collapse">
-            <tbody>
-              {timelineData.map((item, index) => (
-                <tr key={index}>
-                  <td className="w-1/4 border-r border-foreground p-4 align-top font-mono text-sm uppercase tracking-wider text-foreground/60">
-                    {item.year}
-                  </td>
-                  <td className="p-4 align-top">
-                    <h3 className="text-xl font-semibold uppercase tracking-wider">
-                      {item.title}
-                    </h3>
-                    <ul className="mt-3 list-disc space-y-2 pl-5 text-base text-foreground/80">
-                      {item.description.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="relative border-l-2 border-foreground pl-8">
+          {timelineData.map((item, index) => (
+            <div key={index} className="mb-12">
+              <div className="absolute -left-[9px] mt-1.5 h-4 w-4 border-2 border-foreground bg-background"></div>
+              <p className="mb-1 font-mono text-sm uppercase tracking-wider text-foreground/60">
+                {item.year}
+              </p>
+              <h3 className="mb-3 text-xl font-semibold uppercase tracking-wider text-foreground">
+                {item.title}
+              </h3>
+              <ul className="list-inside list-['-_'] space-y-2 pl-2 text-base text-foreground/80">
+                {item.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
     </div>
