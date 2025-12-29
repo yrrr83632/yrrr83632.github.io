@@ -33,9 +33,7 @@ export default function ProjectsPage() {
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className={`flex flex-col md:flex-row justify-between items-start md:items-center p-6 space-y-4 md:space-y-0 ${
-              index < projects.length - 1 ? 'border-b-2 border-foreground' : ''
-            }`}
+            className={`flex flex-col md:flex-row justify-between items-start md:items-center p-6 space-y-4 md:space-y-0`}
           >
             <div className="flex-grow">
               <h2 className="text-2xl font-bold uppercase tracking-wider">
