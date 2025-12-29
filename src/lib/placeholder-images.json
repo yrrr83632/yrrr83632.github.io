@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "homepage-bg",
+      "description": "A portrait of Bala Sankar",
+      "imageUrl": "https://images.unsplash.com/photo-1583195763986-0231686dcd43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4ODE2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Abstract representation of a tech project",
+      "imageUrl": "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzY2ODc3NzE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-2",
+      "description": "Vibrant geometric patterns for a creative project",
+      "imageUrl": "https://images.unsplash.com/photo-1605106702734-205df224ecce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZW9tZXRyaWMlMjBwYXR0ZXJuc3xlbnwwfHx8fDE3NjY5NTY4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric patterns"
+    },
+    {
+      "id": "project-3",
+      "description": "A person interacting with a futuristic interface",
+      "imageUrl": "https://images.unsplash.com/photo-1639322648003-00f7f37ae133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NjkyODgyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic interface"
+    },
+    {
+      "id": "cool-1",
+      "description": "Pop art style comic explosion",
+      "imageUrl": "https://images.unsplash.com/photo-1614194076674-0598e6dd5703?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3AlMjBhcnR8ZW58MHx8fHwxNzY2OTgzMTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pop art"
+    },
+    {
+      "id": "cool-2",
+      "description": "A vintage vinyl record player",
+      "imageUrl": "https://images.unsplash.com/photo-1602848597239-b63398805e3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aW55bCUyMHJlY29yZHxlbnwwfHx8fDE3NjY5NDkwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vinyl record"
+    },
+    {
+      "id": "cool-3",
+      "description": "A close-up of a classic film camera",
+      "imageUrl": "https://images.unsplash.com/photo-1509255806757-ca81636763ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaWxtJTIwY2FtZXJhfGVufDB8fHx8MTc2Njk4MzE1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "film camera"
+    },
+    {
+      "id": "cool-4",
+      "description": "Street art graffiti on a brick wall",
+      "imageUrl": "https://images.unsplash.com/photo-1552250575-e508473b090f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHJlZXQlMjBhcnR8ZW58MHx8fHwxNzY2OTUzODk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "street art"
+    },
+    {
+      "id": "cool-5",
+      "description": "An old-school arcade machine",
+      "imageUrl": "https://images.unsplash.com/photo-1615929339464-fd93aa7bb5ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmNhZGUlMjBtYWNoaW5lfGVufDB8fHx8MTc2Njk4MzE1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "arcade machine"
+    },
+    {
+      "id": "cool-6",
+      "description": "Brightly colored retro sneakers",
+      "imageUrl": "https://images.unsplash.com/photo-1592275942916-9840a2144f8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyZXRybyUyMHNuZWFrZXJzfGVufDB8fHx8MTc2Njk4MzE1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retro sneakers"
+    }
+  ]
 }
