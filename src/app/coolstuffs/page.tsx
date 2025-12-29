@@ -14,7 +14,7 @@ export default function CoolstuffsPage() {
   return (
     <div className="container mx-auto max-w-7xl animate-fade-in px-4 py-12 md:py-20">
       <h1 className="mb-12 font-headline text-5xl font-bold tracking-tighter md:text-7xl">
-        <span className="bg-magenta-500 px-2 text-white">COOL</span>STUFFS
+        <span className="bg-primary px-2 text-primary-foreground">COOL</span>STUFFS
       </h1>
 
       <div className="columns-2 gap-4 sm:columns-3 lg:columns-4">
@@ -25,10 +25,10 @@ export default function CoolstuffsPage() {
               alt={item.description}
               width={500}
               height={500}
-              className="h-auto w-full rounded-lg object-cover"
+              className="h-auto w-full object-cover border-2 border-black"
               data-ai-hint={item.imageHint}
             />
-            <div className="absolute inset-0 rounded-lg bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
+            <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
               <div className="flex h-full items-center justify-center p-4">
                 <p className="text-center text-sm font-medium text-white">{item.description}</p>
               </div>
