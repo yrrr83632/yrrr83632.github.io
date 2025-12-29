@@ -17,7 +17,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { submitContactForm } from "./actions";
-import { MessageCircle } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -69,7 +68,7 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel className="uppercase">Name</FormLabel>
                 <FormControl>
                   <Input placeholder="Your Name" {...field} />
                 </FormControl>
@@ -82,7 +81,7 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel className="uppercase">Email</FormLabel>
                 <FormControl>
                   <Input placeholder="your.email@example.com" {...field} />
                 </FormControl>
@@ -96,7 +95,7 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="uppercase">Message</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Tell me what's on your mind..."
@@ -110,10 +109,9 @@ export function ContactForm() {
         />
         <Button 
           type="submit" 
-          className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+          className="w-full"
           disabled={form.formState.isSubmitting}
         >
-          <MessageCircle className="mr-2 h-5 w-5" />
           {form.formState.isSubmitting ? "Sending..." : "Send Message"}
         </Button>
       </form>

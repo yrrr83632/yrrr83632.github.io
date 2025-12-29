@@ -6,8 +6,8 @@ export default function AboutPage() {
 
   return (
     <div className="container mx-auto max-w-5xl animate-fade-in px-4 py-12 md:py-20">
-      <h1 className="mb-8 font-headline text-5xl font-bold tracking-tighter md:text-7xl">
-        <span className="bg-primary px-2 text-primary-foreground">ABOUT</span> ME
+      <h1 className="mb-8 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
+        About Me
       </h1>
       <div className="grid gap-12 md:grid-cols-3">
         <div className="md:col-span-1">
@@ -17,7 +17,7 @@ export default function AboutPage() {
              alt={aboutImage.description}
              width={400}
              height={400}
-             className="h-auto w-full object-cover border-4 border-black"
+             className="h-auto w-full object-cover border-2 border-black"
              data-ai-hint={aboutImage.imageHint}
            />
           )}

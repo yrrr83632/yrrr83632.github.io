@@ -25,8 +25,8 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="container mx-auto max-w-7xl animate-fade-in px-4 py-12 md:py-20">
-      <h1 className="mb-12 font-headline text-5xl font-bold tracking-tighter md:text-7xl">
-        <span className="bg-primary px-2 text-primary-foreground">PASSION</span> PROJECTS
+      <h1 className="mb-12 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
+        Passion Projects
       </h1>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

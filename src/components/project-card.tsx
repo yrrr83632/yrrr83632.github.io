@@ -27,7 +27,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link href={project.link} className="group block">
-      <Card className="h-full overflow-hidden bg-secondary transition-all group-hover:border-primary group-hover:shadow-none border-2">
+      <Card className="h-full overflow-hidden bg-background border-2 border-border transition-all group-hover:border-primary">
         <CardHeader className="p-0">
           <div className="relative h-56 w-full">
             <Image
@@ -40,14 +40,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </CardHeader>
         <CardContent className="p-6">
-          <CardTitle className="mb-2 font-headline text-2xl">
+          <CardTitle className="mb-2 font-headline text-2xl uppercase">
             {project.title}
           </CardTitle>
           <CardDescription className="mb-4 text-foreground/70">
             {project.description}
           </CardDescription>
           <div className="flex items-center text-sm font-semibold text-primary">
-            <span>Learn More</span>
+            <span className="uppercase">Learn More</span>
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </div>
         </CardContent>
