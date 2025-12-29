@@ -1,4 +1,12 @@
-import { ProjectCard } from "@/components/project-card";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const projects = [
@@ -25,14 +33,28 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="container mx-auto max-w-7xl p-8 animation-fade-in">
-      <h1 className="mb-12 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
+      <h1 className="mb-12 text-5xl font-bold uppercase tracking-widest md:text-7xl">
         Passion Projects
       </h1>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          project.image && <ProjectCard key={index} project={{...project, image: project.image}} />
-        ))}
+      <div className="border-4 border-foreground">
+        <Table>
+          <TableCaption>A list of my recent projects.</TableCaption>
+          <TableHeader>
+            <TableRow className="border-b-4 border-foreground">
+              <TableHead className="w-[30%] text-xl uppercase text-foreground">Project</TableHead>
+              <TableHead className="text-xl uppercase text-foreground">Description</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {projects.map((project) => (
+              <TableRow key={project.title} className="border-b-2 border-foreground last:border-b-0">
+                <TableCell className="font-medium uppercase text-lg text-foreground">{project.title}</TableCell>
+                <TableCell className="text-base text-foreground/80">{project.description}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
     </div>
   );
