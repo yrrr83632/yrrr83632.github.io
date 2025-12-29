@@ -9,24 +9,17 @@ type TimelineItem = {
 
 const timelineData: TimelineItem[] = [
   {
-    year: "2019 – 2021",
-    title: "Kendriya Vidyalaya",
+    year: '2011-2023',
+    title: 'Kendriya Vidyalaya',
     description: [
-      "Completed Class 11 and 12 in the science stream",
-      "Experimented with computers, scripts, and basic systems",
-      "Developed habit of breaking and understanding how things work",
-      "Built early interest in cybersecurity and machine learning"
+      'The good old days that I miss the most were when I was in school and experimented with many things. I completed my 11th and 12th in the science stream.',
     ],
   },
   {
-    year: "2022 – Present",
-    title: "Vellore Institute of Technology, Vellore",
+    year: '2023-2028',
+    title: 'Vellore Institute of Technology, vellore',
     description: [
-      "Pursuing Integrated M.Tech in Computer Science and Engineering",
-      "Active member of Anchoring Club, LEO Club, and Bulls & Bears",
-      "Founder and Secretary of The WhiteHat’s Club (Cybersecurity)",
-      "Hands-on work in security, ML, and system experimentation",
-      "Exploring entrepreneurship and real-world product building"
+      'The next stage of my life… where I am learning many things. I am pursuing an integrated M.Tech in Computer Science and Engineering… actively taking part in clubs such as the Anchoring Club, LEO Club, and Bulls and Bears… I also founded my own club, The WhiteHat’s Club a cybersecurity club,where I served as the Secretary… constantly doing new things and learning even more…',
     ],
   },
 ];
