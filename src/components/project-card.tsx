@@ -27,7 +27,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link href={project.link} className="group block">
-      <Card className="h-full overflow-hidden bg-background border-2 border-border transition-all group-hover:border-primary">
+      <Card className="h-full overflow-hidden bg-background border border-border transition-all group-hover:border-primary">
         <CardHeader className="p-0">
           <div className="relative h-56 w-full">
             <Image

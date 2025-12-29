@@ -2,7 +2,7 @@ import { ContactForm } from './form';
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto max-w-3xl animate-fade-in px-4 py-12 md:py-20">
+    <div className="container mx-auto max-w-3xl animate-fade-in p-8">
        <h1 className="mb-4 text-center font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
         Get in Touch
       </h1>

@@ -21,13 +21,14 @@ const iconMap = {
 
 export function SocialLinks() {
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex flex-wrap items-center justify-center gap-2">
       {Object.entries(siteConfig.links).map(([key, href]) => {
         const Icon = iconMap[key as keyof typeof iconMap];
+        const isEmail = key === 'email';
         return (
           <Button key={key} variant="ghost" size="icon" asChild>
-            <Link href={href} target="_blank" rel="noopener noreferrer">
-              <Icon className="h-6 w-6 transition-colors hover:text-primary" />
+            <Link href={href} target={isEmail ? '_self' : '_blank'} rel="noopener noreferrer">
+              <Icon className="h-5 w-5 text-foreground/60 transition-colors hover:text-primary" />
               <span className="sr-only">{key}</span>
             </Link>
           </Button>

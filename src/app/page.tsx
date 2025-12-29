@@ -1,19 +1,17 @@
-import { SocialLinks } from '@/components/social-links';
 import { siteConfig } from '@/config/site';
 
 export default function Home() {
   return (
-    <section className="flex h-screen w-full items-center justify-center">
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="mb-4 font-headline text-6xl font-bold uppercase tracking-widest md:text-8xl lg:text-9xl">
+    <section className="flex h-full items-center justify-center p-8">
+      <div className="text-center">
+        <div className="mb-8 inline-block bg-primary p-4">
+          <h1 className="font-headline text-6xl font-bold uppercase tracking-widest text-primary-foreground md:text-8xl lg:text-9xl">
             Bala Sankar
           </h1>
-          <p className="mb-8 bg-primary px-2 py-1 text-lg font-bold uppercase tracking-wider text-primary-foreground md:text-xl">
-            Innovator | Creator | Thinker
-          </p>
-          <SocialLinks />
         </div>
+        <p className="text-2xl font-bold uppercase tracking-wider text-foreground/80 md:text-3xl">
+          Innovator | Creator | Thinker
+        </p>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const coolstuffs = [
 
 export default function CoolstuffsPage() {
   return (
-    <div className="container mx-auto max-w-7xl animate-fade-in px-4 py-12 md:py-20">
+    <div className="container mx-auto max-w-7xl animate-fade-in p-8">
       <h1 className="mb-12 font-headline text-5xl font-bold uppercase tracking-widest md:text-7xl">
         Cool Stuffs
       </h1>
@@ -25,7 +25,7 @@ export default function CoolstuffsPage() {
               alt={item.description}
               width={500}
               height={500}
-              className="h-auto w-full object-cover border-2 border-black"
+              className="h-auto w-full object-cover border border-black"
               data-ai-hint={item.imageHint}
             />
             <div className="absolute inset-0 bg-black/70 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center p-4">

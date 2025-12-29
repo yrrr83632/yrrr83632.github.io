@@ -10,19 +10,18 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b-2 border-border bg-background">
-      <div className="container flex h-20 items-center">
+      <div className="flex flex-col space-y-8">
         <Link href="/" className="flex items-center">
-          <span className="text-xl font-bold uppercase tracking-wider">{siteConfig.name}</span>
+          <span className="text-2xl font-bold uppercase tracking-widest">{siteConfig.name}</span>
         </Link>
-        <nav className="ml-auto flex items-center gap-4 sm:gap-6">
+        <nav className="flex flex-col items-start space-y-4">
           {siteConfig.navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                "text-sm font-medium uppercase tracking-wider transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary border-b-2 border-primary" : "text-foreground"
+                "text-lg font-medium uppercase tracking-wider transition-colors hover:text-primary",
+                pathname === item.href ? "text-primary" : "text-foreground/60"
               )}
             >
               {item.label}
@@ -30,6 +29,5 @@ export function Header() {
           ))}
         </nav>
       </div>
-    </header>
   );
 }
