@@ -5,6 +5,10 @@ export const siteConfig = {
   description: "Personal portfolio of Bala Sankar, showcasing passion projects and cool stuffs.",
   navItems: [
     {
+      label: "Home",
+      href: "/",
+    },
+    {
       label: "About",
       href: "/about",
     },

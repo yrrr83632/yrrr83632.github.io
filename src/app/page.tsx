@@ -1,5 +1,4 @@
 import { SocialLinks } from '@/components/social-links';
-import { siteConfig } from '@/config/site';
 
 export default function Home() {
   return (
@@ -10,12 +9,12 @@ export default function Home() {
             Bala Sankar
           </h1>
         </div>
-        <p className="text-2xl font-bold uppercase tracking-wider text-foreground/80 md:text-3xl">
+        <p className="mb-8 text-2xl font-bold uppercase tracking-wider text-foreground/80 md:text-3xl">
           Innovator | Creator | Thinker
         </p>
+        <SocialLinks />
       </div>
       <div className="flex flex-col items-center space-y-4 pb-8">
-        <SocialLinks />
         <p className="text-sm text-foreground/50">
           &copy; {new Date().getFullYear()} Bala Sankar
         </p>
