@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import {
+  Github,
   Instagram,
   Linkedin,
   Mail,
@@ -11,6 +12,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const iconMap = {
+  github: Github,
   instagram: Instagram,
   medium: Newspaper,
   x: Twitter,

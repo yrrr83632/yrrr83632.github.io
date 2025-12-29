@@ -1,60 +1,47 @@
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Link from "next/link";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "Project Alpha",
     description: "A groundbreaking approach to decentralized finance, leveraging AI for predictive market analysis.",
-    image: PlaceHolderImages.find(p => p.id === 'project-1'),
-    link: "#"
+    githubLink: "#"
   },
   {
     title: "Creative Canvas",
     description: "An interactive web application that allows users to generate and collaborate on digital pop art in real-time.",
-    image: PlaceHolderImages.find(p => p.id === 'project-2'),
-    link: "#"
+    githubLink: "#"
   },
   {
     title: "Future Forge",
     description: "An experimental platform for building and testing next-generation user interfaces with gesture controls.",
-    image: PlaceHolderImages.find(p => p.id === 'project-3'),
-    link: "#"
+    githubLink: "#"
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto max-w-7xl p-8 animation-fade-in">
+    <div className="container mx-auto max-w-5xl p-8 pt-24 animation-fade-in">
       <h1 className="mb-12 text-5xl font-bold uppercase tracking-widest md:text-7xl">
         Passion Projects
       </h1>
 
       <div className="border-4 border-foreground">
-        <Table>
-          <TableCaption>A list of my recent projects.</TableCaption>
-          <TableHeader>
-            <TableRow className="border-b-4 border-foreground">
-              <TableHead className="w-[30%] text-xl uppercase text-foreground">Project</TableHead>
-              <TableHead className="text-xl uppercase text-foreground">Description</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {projects.map((project) => (
-              <TableRow key={project.title} className="border-b-2 border-foreground last:border-b-0">
-                <TableCell className="font-medium uppercase text-lg text-foreground">{project.title}</TableCell>
-                <TableCell className="text-base text-foreground/80">{project.description}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        {projects.map((project, index) => (
+          <div
+            key={project.title}
+            className={`flex flex-col md:flex-row justify-between items-start md:items-center p-6 space-y-4 md:space-y-0 ${index < projects.length - 1 ? 'border-b-4 border-foreground' : ''}`}
+          >
+            <div className="flex-grow">
+              <h2 className="text-2xl font-bold uppercase tracking-wider">{project.title}</h2>
+              <p className="mt-2 text-base text-foreground/80 max-w-2xl">{project.description}</p>
+            </div>
+            <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 border-2 border-foreground bg-background text-foreground hover:bg-foreground hover:text-background transition-colors px-4 py-2 mt-4 md:mt-0">
+              <Github size={20} />
+              <span className="font-bold uppercase">GitHub</span>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

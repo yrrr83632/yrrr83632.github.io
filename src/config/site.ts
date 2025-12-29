@@ -26,6 +26,7 @@ export const siteConfig = {
     },
   ],
   links: {
+    github: "https://github.com",
     instagram: "https://instagram.com",
     medium: "https://medium.com",
     x: "https://x.com",
