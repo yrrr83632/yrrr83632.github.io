@@ -10,7 +10,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="absolute top-0 right-0 p-8">
+    <header className="absolute top-0 right-0 z-50 p-8">
        <nav className="flex items-center space-x-6">
           {siteConfig.navItems.map((item) => (
             <Link
